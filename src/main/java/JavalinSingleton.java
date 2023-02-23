@@ -17,7 +17,10 @@ public class JavalinSingleton {
     public static Javalin getInstance(){
         Javalin app = Javalin.create();
         
-        app.get("/", ctx -> ctx.result("Hello World"));
+        app.post("hello", ctx -> {
+            // some code
+            ctx.status(201);
+        });
 
         return app;
     }
