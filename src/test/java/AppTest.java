@@ -37,7 +37,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        String expectedResult = "Not Found";
+        String expectedResult = "Hello World";
 
         String actualResult = CommandLine.executeCommandPrompt("curl http://localhost:9001/hello");
 
